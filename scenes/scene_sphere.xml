@@ -1,0 +1,45 @@
+<scene>
+    <materials>
+        <material name="material-diffuse-red" enable="1">
+            <diffuse>0.9 0 0</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+    </materials>
+    <geometries>
+        <sphere name="sphere-diffuse" material="#material-diffuse-red" enable="1">
+            <radius>30</radius>
+            <position>0 30 -100</position>
+        </sphere>
+    </geometries>
+    <lights>
+        <light name="light1" enable="1">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>0.8 0.8 1</color>
+            <position>220 120 0</position>
+        </light>
+        <light name="light2" enable="1">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>1 1 1 </color>
+            <position>-220 120 0</position>
+        </light>
+        <light name="light2" enable="0">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>1 1 1 </color>
+            <position>0 -120 0</position>
+        </light>
+    </lights>
+    <cameras>
+        <camera name="mainCamera" enable="1">
+            <resolution>1080 720</resolution>
+            <fov>60</fov>
+            <position>0 30 0</position>
+            <rotation>0 0 0</rotation>
+        </camera>
+    </cameras>
+</scene>

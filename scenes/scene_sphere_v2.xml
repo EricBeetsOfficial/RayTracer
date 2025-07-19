@@ -1,0 +1,57 @@
+<scene>
+    <materials>
+        <material name="material-diffuse-white" enable="1">
+            <diffuse>1 1 1</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-diffuse-green-reflective" enable="1">
+            <diffuse>0 0.9 0</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0.9</reflective>
+            <transparency>0.5</transparency>
+        </material>
+    </materials>
+    <geometries>
+        <sphere name="sphere-diffuse" material="#material-diffuse-green-reflective" enable="1">
+            <radius>30</radius>
+            <position>0 30 -100</position>
+        </sphere>
+        <plane name="plane-bottom" material="#material-diffuse-white" enable="1">
+            <normal>0 1 0</normal>
+            <size>0</size>
+            <position>0 0 0</position>
+        </plane>
+    </geometries>
+    <lights>
+        <light name="light1" enable="1">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>0.8 0.8 1</color>
+            <position>220 120 0</position>
+        </light>
+        <light name="light2" enable="1">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>1 1 1 </color>
+            <position>-220 120 0</position>
+        </light>
+        <light name="light2" enable="0">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>1 1 1 </color>
+            <position>0 -120 0</position>
+        </light>
+    </lights>
+    <cameras>
+        <camera name="mainCamera" enable="1">
+            <resolution>1080 720</resolution>
+            <fov>60</fov>
+            <position>0 30 40</position>
+            <rotation>0 0 0</rotation>
+        </camera>
+    </cameras>
+</scene>

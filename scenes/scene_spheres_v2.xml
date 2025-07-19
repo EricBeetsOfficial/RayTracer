@@ -1,0 +1,217 @@
+<scene>
+    <materials>
+        <material name="material-diffuse-white" enable="1">
+            <diffuse>1 1 1</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <!-- Reflective -->
+        <material name="material-red-00" enable="1">
+            <diffuse>0.9 0 0</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-red-01" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0.25</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-red-02" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0.5</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-red-03" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0.75</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-red-04" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>1</reflective>
+            <transparency>0</transparency>
+        </material>
+        <!-- Transparency -->
+        <material name="material-red-10" enable="1">
+            <diffuse>0.9 0 0</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-red-11" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0</reflective>
+            <transparency>0.25</transparency>
+        </material>
+        <material name="material-red-12" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0</reflective>
+            <transparency>0.5</transparency>
+        </material>
+        <material name="material-red-13" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0</reflective>
+            <transparency>0.75</transparency>
+        </material>
+        <material name="material-red-14" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0</reflective>
+            <transparency>1</transparency>
+        </material>
+        <!-- Transparency & Reflective -->
+        <material name="material-red-20" enable="1">
+            <diffuse>0.9 0 0</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-red-21" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0.25</reflective>
+            <transparency>0.25</transparency>
+        </material>
+        <material name="material-red-22" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0.75</reflective>
+            <transparency>0.5</transparency>
+        </material>
+        <material name="material-red-23" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>0.75</reflective>
+            <transparency>0.75</transparency>
+        </material>
+        <material name="material-red-24" enable="1">
+            <diffuse>1 0.7 0.7</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>
+            <reflective>1</reflective>
+            <transparency>1</transparency>
+        </material>
+    </materials>
+    <geometries>
+        <!-- Reflective -->
+        <sphere name="sphere-diffuse-00" material="#material-red-00" enable="1">
+            <radius>30</radius>
+            <position>0 27 0</position>
+        </sphere>
+        <sphere name="sphere-diffuse-01" material="#material-red-01" enable="1">
+            <radius>30</radius>
+            <position>70 27 0</position>
+        </sphere>
+        <sphere name="sphere-diffuse-02" material="#material-red-02" enable="1">
+            <radius>30</radius>
+            <position>140 27 0</position>
+        </sphere>
+        <sphere name="sphere-diffuse-03" material="#material-red-03" enable="1">
+            <radius>30</radius>
+            <position>210 27 0</position>
+        </sphere>
+        <sphere name="sphere-diffuse-04" material="#material-red-04" enable="1">
+            <radius>30</radius>
+            <position>280 27 0</position>
+        </sphere>
+        <!-- Transparency -->
+        <sphere name="sphere-diffuse-10" material="#material-red-10" enable="1">
+            <radius>30</radius>
+            <position>0 27 70</position>
+        </sphere>
+        <sphere name="sphere-diffuse-11" material="#material-red-11" enable="1">
+            <radius>30</radius>
+            <position>70 27 70</position>
+        </sphere>
+        <sphere name="sphere-diffuse-12" material="#material-red-12" enable="1">
+            <radius>30</radius>
+            <position>140 27 70</position>
+        </sphere>
+        <sphere name="sphere-diffuse-13" material="#material-red-13" enable="1">
+            <radius>30</radius>
+            <position>210 27 70</position>
+        </sphere>
+        <sphere name="sphere-diffuse-14" material="#material-red-14" enable="1">
+            <radius>30</radius>
+            <position>280 27 70</position>
+        </sphere>
+        <!-- Transparency & Reflective -->
+        <sphere name="sphere-diffuse-20" material="#material-red-20" enable="1">
+            <radius>30</radius>
+            <position>0 27 140</position>
+        </sphere>
+        <sphere name="sphere-diffuse-21" material="#material-red-21" enable="1">
+            <radius>30</radius>
+            <position>70 27 140</position>
+        </sphere>
+        <sphere name="sphere-diffuse-22" material="#material-red-22" enable="1">
+            <radius>30</radius>
+            <position>140 27 140</position>
+        </sphere>
+        <sphere name="sphere-diffuse-23" material="#material-red-23" enable="1">
+            <radius>30</radius>
+            <position>210 27 140</position>
+        </sphere>
+        <sphere name="sphere-diffuse-24" material="#material-red-24" enable="1">
+            <radius>30</radius>
+            <position>280 27 140</position>
+        </sphere>
+        <plane name="plane-bottom" material="#material-diffuse-white" enable="1">
+            <normal>0 1 0</normal>
+            <size>0</size>
+            <position>0 0 0</position>
+        </plane>
+    </geometries>
+    <lights>
+        <light name="light1" enable="1">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>0.8 0.8 1</color>
+            <position>110 80 -90</position>
+        </light>
+        <light name="light2" enable="1">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>1 1 1 </color>
+            <position>-60 80 90</position>
+        </light>
+        <light name="light2" enable="1">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>1 1 1 </color>
+            <position>300 80 90</position>
+        </light>
+    </lights>
+    <cameras>
+        <camera name="mainCamera" enable="1">
+            <resolution>1080 720</resolution>
+            <fov>60</fov>
+            <position>150 0 250</position>
+            <rotation>55 20 0</rotation>
+        </camera>
+    </cameras>
+</scene>

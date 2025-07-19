@@ -1,0 +1,149 @@
+<scene>
+    <materials>
+        <material name="material-diffuse-red" enable="1">
+            <diffuse>0.9 0 0</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>            
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-diffuse-green" enable="1">
+            <diffuse>0 0.9 0</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>            
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-diffuse-green-light" enable="1">
+            <diffuse>0 1 0</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>            
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-diffuse-blue" enable="1">
+            <diffuse>0 0 0.9</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>            
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-diffuse-white" enable="1">
+            <diffuse>1 1 1</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>            
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-diffuse-yellow" enable="1">
+            <diffuse>1 1 0</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>            
+            <reflective>0</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-reflective" enable="1">
+            <diffuse>1 0.5 0.5</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>            
+            <reflective>0.85</reflective>
+            <transparency>0</transparency>
+        </material>
+        <material name="material-transparent" enable="1">
+            <diffuse>1 0.9 0.9</diffuse>
+            <specular>1 1 1</specular>
+            <shininess>30</shininess>            
+            <reflective>0</reflective>
+            <transparency>0.9</transparency>
+        </material>
+    </materials>
+    <geometries>
+        <sphere name="sphere-diffuse" material="#material-diffuse-red" enable="1">
+            <radius>3</radius>
+            <position>2 -5 -30</position>
+        </sphere>
+        <sphere name="sphere-reflective" material="#material-diffuse-green-light" enable="0">
+            <radius>1</radius>
+            <position>-4 0 -25</position>
+        </sphere>
+        <sphere name="sphere-reflective" material="#material-reflective" enable="1">
+            <radius>2</radius>
+            <position>-5.5 5.5 -35</position>
+        </sphere>
+        <sphere name="sphere-transparente" material="#material-transparent" enable="1">
+            <radius>1</radius>
+            <position>3 -2 -18</position>
+        </sphere>
+        <plane name="plane-back" material="#material-diffuse-blue" enable="1">
+            <normal>0 0 1</normal>
+            <size>0</size>
+            <position>0 0 -36</position>
+        </plane>
+        <plane name="plane-left" material="#material-diffuse-red" enable="1">
+            <normal>1 0 0</normal>
+            <size>0</size>
+            <position>-8 0 0</position>
+        </plane>
+        <plane name="plane-right" material="#material-diffuse-green" enable="1">
+            <normal>-1 0 0</normal>
+            <size>0</size>
+            <position>8 0 0</position>
+        </plane>
+        <plane name="plane-bottom" material="#material-diffuse-yellow" enable="1">
+            <normal>0 1 0</normal>
+            <size>0</size>
+            <position>0 -8 0</position>
+        </plane>
+        <plane name="plane-top" material="#material-diffuse-white" enable="1">
+            <normal>0 -1 0</normal>
+            <size>0</size>
+            <position>0 8 0</position>
+        </plane>
+    </geometries>
+    <lights>
+        <light name="light1" enable="1">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>0.7 0.7 0.7</color>
+            <position>-7 -6 -25</position>
+        </light>
+        <light name="light2" enable="1">
+            <type>point</type>
+            <shadow>true</shadow>
+            <color>0.5 0.5 0.5</color>
+            <position>6 6 -30</position>
+        </light>
+    </lights>
+    <cameras>
+        <camera name="mainCamera" enable="0">
+            <resolution>340 240</resolution>
+            <fov>50</fov>
+            <position>5 6 7</position>
+            <rotation>0 0 0</rotation>
+        </camera>
+        <camera name="main-test" enable="0">
+            <resolution>50 50</resolution>
+            <fov>50</fov>
+            <position>5 6 7</position>
+            <rotation>0 0 0</rotation>
+        </camera>
+        <camera name="main-1" enable="0">
+            <resolution>640 480</resolution>
+            <fov>50</fov>
+            <position>-5 5 0</position>
+            <rotation>15 15 0</rotation>
+        </camera>
+        <camera name="main-2" enable="1">
+            <resolution>1080 720</resolution>
+            <fov>50</fov>
+            <position>0 0 -8</position>
+            <rotation>0 0 0</rotation>
+        </camera>
+        <camera name="main-3" enable="0">
+            <resolution>2048 1536</resolution>
+            <fov>50</fov>
+            <position>5 6 7</position>
+            <rotation>0 0 0</rotation>
+        </camera>
+    </cameras>
+</scene>
