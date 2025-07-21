@@ -3,8 +3,11 @@
 This is a technical test given during an interview.
 
 **Subject**: Develop a mini ray tracer.
+
 **Input**: XML file containing the description of a scene.
+
 **Output**: Image file in a standard format.
+
 **Detailed description**:
 
 The scene contains:
