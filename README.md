@@ -6,6 +6,7 @@ This is a technical test given during an interview.
 **Input**: XML file containing the description of a scene.
 **Output**: Image file in a standard format.
 **Detailed description**:
+
 The scene contains:
 - A set of geometries positioned absolutely in the world: sphere and plane
 - A set of point light sources that cast shadows
